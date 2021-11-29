@@ -30,6 +30,7 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // THis is supposed to do something
         if (SceneManager.GetActiveScene().buildIndex != 0)
         {
             
