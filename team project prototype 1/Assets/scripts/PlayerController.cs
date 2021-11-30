@@ -22,13 +22,14 @@ public class PlayerController : MonoBehaviour
     public bool canShoot = true;
     public bool fireMode = true; // True == fastRateOfFire | False == slowRateOfFire
 
-    
+    GameManager gm;
     public GameObject bullet;
     Rigidbody2D myRB;
 
     // Start is called before the first frame update
     void Start()
     {
+        gm = GameObject.Find("GameManager").GetComponent<GameManager>();
         myRB = GetComponent<Rigidbody2D>();
 
         
@@ -166,6 +167,13 @@ public class PlayerController : MonoBehaviour
             }
 
            
+        }
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("end"))
+        {
+            gm.playerOnEnd = true;
         }
     }
 }

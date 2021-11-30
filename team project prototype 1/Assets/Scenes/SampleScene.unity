@@ -312,6 +312,7 @@ MonoBehaviour:
   restartButton: {fileID: 0}
   pauseIndicator: {fileID: 0}
   enemyCounter: 0
+  playerOnEnd: 0
   paused: 0
   levelDelayTimer: 1
 --- !u!4 &281905820
@@ -132552,7 +132553,7 @@ GameObject:
   - component: {fileID: 2136761635}
   m_Layer: 0
   m_Name: end
-  m_TagString: Untagged
+  m_TagString: end
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -132643,7 +132644,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2136761634}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -62.9, y: 118.6, z: 0}
+  m_LocalPosition: {x: -1.3, y: 16.8, z: 0}
   m_LocalScale: {x: 7.4513, y: 5.5646, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

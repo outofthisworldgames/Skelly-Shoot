@@ -18,6 +18,7 @@ public class GameManager : MonoBehaviour
     public GameObject pauseIndicator;
     public int enemyCounter;
 
+    public bool playerOnEnd = false;
     public bool paused = false;
     public float levelDelayTimer = 1f;
 
@@ -30,6 +31,8 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        enemyCounter = FindObjectsOfType<EnemyController>().Length;
+
         // THis is supposed to do something
         if (SceneManager.GetActiveScene().buildIndex != 0)
         {
@@ -38,14 +41,11 @@ public class GameManager : MonoBehaviour
             
             
         }
-        
-    }
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        enemyCounter = FindObjectsOfType<EnemyController>().Length;
-        if (enemyCounter == 0)
+        Debug.Log("Test");
+        if (playerOnEnd = true && enemyCounter == 0)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }
+    
 }
