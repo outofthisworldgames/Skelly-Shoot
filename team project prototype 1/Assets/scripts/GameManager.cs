@@ -42,7 +42,7 @@ public class GameManager : MonoBehaviour
             
         }
         Debug.Log("Test");
-        if (playerOnEnd = true && enemyCounter == 0)
+        if (playerOnEnd == true && enemyCounter == 0)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }

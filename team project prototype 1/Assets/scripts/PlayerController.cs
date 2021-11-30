@@ -176,4 +176,11 @@ public class PlayerController : MonoBehaviour
             gm.playerOnEnd = true;
         }
     }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("end"))
+        {
+            gm.playerOnEnd = false;
+        }
+    }
 }
