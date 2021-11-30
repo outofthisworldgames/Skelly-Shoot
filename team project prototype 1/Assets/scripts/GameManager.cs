@@ -38,6 +38,14 @@ public class GameManager : MonoBehaviour
             
             
         }
+        
     }
-
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        enemyCounter = FindObjectsOfType<EnemyController>().Length;
+        if (enemyCounter == 0)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        }
+    }
 }
