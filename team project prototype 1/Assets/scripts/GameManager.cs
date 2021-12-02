@@ -16,6 +16,7 @@ public class GameManager : MonoBehaviour
     public GameObject quitButton;
     public GameObject restartButton;
     public GameObject pauseIndicator;
+    public GameObject playButton;
     public int enemyCounter;
 
     public bool playerOnEnd = false;
@@ -41,7 +42,7 @@ public class GameManager : MonoBehaviour
             
             
         }
-        Debug.Log("Test");
+       // Debug.Log("Test");
         if (playerOnEnd == true && enemyCounter == 0)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
