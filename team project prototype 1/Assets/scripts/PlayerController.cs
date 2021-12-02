@@ -9,18 +9,18 @@ public class PlayerController : MonoBehaviour
     public float bulletSpeed = 7.5f;
     public float bulletLifespan = 2.5f;
     public float ammoCounter = 0;
-    public float maxAmmoSize = 1000000000000000000000000000f;
+    public float maxAmmoSize = 100000f;
     public float refillAmmoPercentage = .1f;
     private float currentRateOfFire;
     public float slowRateOfFire = .3f;
-    public float fastRateOfFire = .0000000000000000000000000000005f;
+    public float fastRateOfFire = .05f;
     private float rofTimer = 0;
     private float invincibilityTimer = 0;
     public float invincibilityDuration = 2;
 
     public bool invincible = false;
     public bool canShoot = true;
-    public bool fireMode = true; // True == fastRateOfFire | False == slowRateOfFire
+    public bool fireMode = false; // True == fastRateOfFire | False == slowRateOfFire
 
     GameManager gm;
     public GameObject bullet;
