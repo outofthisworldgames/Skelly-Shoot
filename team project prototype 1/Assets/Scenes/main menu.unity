@@ -645,6 +645,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aac9f9f1ab7390c4986797362b02e07c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pause: {fileID: 0}
 --- !u!114 &772282332
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -941,12 +942,12 @@ GameObject:
   - component: {fileID: 921726925}
   - component: {fileID: 921726924}
   m_Layer: 5
-  m_Name: pauseMenu
+  m_Name: pause
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &921726923
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1166,7 +1167,7 @@ MonoBehaviour:
   mainMenuButton: {fileID: 0}
   quitButton: {fileID: 978238050}
   restartButton: {fileID: 0}
-  pauseIndicator: {fileID: 0}
+  pauseIndicator: {fileID: 921726922}
   playButton: {fileID: 0}
   enemyCounter: 0
   playerOnEnd: 0
@@ -1271,13 +1272,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 772282330}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 772282331}
+        m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
+        m_MethodName: ResumeGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
