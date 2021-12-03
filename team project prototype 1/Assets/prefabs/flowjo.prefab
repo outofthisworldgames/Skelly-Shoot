@@ -154,7 +154,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 10
-  speed: 2
+  speed: 5
   advMode: 1
   isFollowing: 0
   moveOnY: 1
