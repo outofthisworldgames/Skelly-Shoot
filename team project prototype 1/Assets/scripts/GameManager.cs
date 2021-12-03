@@ -36,7 +36,7 @@ public class GameManager : MonoBehaviour
         enemyCounter = GameObject.FindObjectsOfType<EnemyController>().Length;
 
         // THis is supposed to do something
-        if (SceneManager.GetActiveScene().buildIndex != 0 && SceneManager.GetActiveScene().buildIndex != 3)
+        if (SceneManager.GetActiveScene().buildIndex != 0 && SceneManager.GetActiveScene().buildIndex != 4)
         {
 
             enemyCount.text = "Enemy Count: " + enemyCounter;
