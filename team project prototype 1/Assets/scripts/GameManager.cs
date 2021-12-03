@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
 
     public Text healthText;
     public Text ammoText;
+    public Text enemyCount;
 
     public GameObject resumeButton;
     public GameObject mainMenuButton;
@@ -17,7 +18,7 @@ public class GameManager : MonoBehaviour
     public GameObject restartButton;
     public GameObject pauseIndicator;
     public GameObject playButton;
-    public int enemyCounter;
+    public int enemyCounter = 0;
 
     public bool playerOnEnd = false;
     public bool paused = false;
@@ -32,15 +33,15 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        enemyCounter = FindObjectsOfType<EnemyController>().Length;
+        enemyCounter = GameObject.FindObjectsOfType<EnemyController>().Length;
 
         // THis is supposed to do something
-        if (SceneManager.GetActiveScene().buildIndex != 0)
+        if (SceneManager.GetActiveScene().buildIndex != 0 && SceneManager.GetActiveScene().buildIndex != 3)
         {
-            
 
-            
-            
+            enemyCount.text = "Enemy Count: " + enemyCounter;
+
+
         }
        // Debug.Log("Test");
         if (playerOnEnd == true && enemyCounter == 0)
