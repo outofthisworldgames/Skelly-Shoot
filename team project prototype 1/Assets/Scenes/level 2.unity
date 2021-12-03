@@ -397,7 +397,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.3333334, y: 1}
+    m_SensorSize: {x: 2.4455957, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -18652,37 +18652,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08437e9957d009340a49a50a097be833, type: 3}
---- !u!1 &668436195 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8798889424432245769, guid: 460572c39bb283c4db3e151195406f48, type: 3}
-  m_PrefabInstance: {fileID: 905476828}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &668436196
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 668436195}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f152d1d7523390419bec3efa7f6ffa9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 3
-  speed: 7.5
-  bulletSpeed: 7.5
-  bulletLifespan: 2.5
-  ammoCounter: 0
-  maxAmmoSize: 1e+27
-  refillAmmoPercentage: 0.1
-  slowRateOfFire: 0.3
-  fastRateOfFire: 5e-17
-  invincibilityDuration: 2
-  invincible: 0
-  canShoot: 1
-  fireMode: 1
-  bullet: {fileID: 7216829091996747393, guid: 30055c4672b568347a3e5b436f753fb9, type: 3}
 --- !u!4 &668436200 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4650392504674619769, guid: 460572c39bb283c4db3e151195406f48, type: 3}

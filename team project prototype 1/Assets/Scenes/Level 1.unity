@@ -169,7 +169,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.3333334, y: 1}
+    m_SensorSize: {x: 2.4455957, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -1463,42 +1463,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08437e9957d009340a49a50a097be833, type: 3}
---- !u!1 &421598526 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8798889424432245769, guid: 460572c39bb283c4db3e151195406f48, type: 3}
-  m_PrefabInstance: {fileID: 150977629545235748}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &421598531 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4650392504674619769, guid: 460572c39bb283c4db3e151195406f48, type: 3}
   m_PrefabInstance: {fileID: 150977629545235748}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &421598532
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 421598526}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f152d1d7523390419bec3efa7f6ffa9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 5
-  speed: 7
-  bulletSpeed: 7.5
-  bulletLifespan: 2
-  ammoCounter: 0
-  maxAmmoSize: 10000
-  refillAmmoPercentage: 0.1
-  slowRateOfFire: 0.3
-  fastRateOfFire: 0.005
-  invincibilityDuration: 2
-  invincible: 0
-  canShoot: 1
-  fireMode: 1
-  bullet: {fileID: 7216829091996747393, guid: 30055c4672b568347a3e5b436f753fb9, type: 3}
 --- !u!1001 &466040616
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -139278,14 +139247,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8171312755862443357, guid: 460572c39bb283c4db3e151195406f48, type: 3}
-      propertyPath: bullet
-      value: 
-      objectReference: {fileID: 7216829091996747393, guid: 30055c4672b568347a3e5b436f753fb9, type: 3}
     - target: {fileID: 8798889424432245769, guid: 460572c39bb283c4db3e151195406f48, type: 3}
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 8171312755862443357, guid: 460572c39bb283c4db3e151195406f48, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 460572c39bb283c4db3e151195406f48, type: 3}

@@ -1328,42 +1328,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08437e9957d009340a49a50a097be833, type: 3}
---- !u!1 &159148036 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8798889424432245769, guid: 460572c39bb283c4db3e151195406f48, type: 3}
-  m_PrefabInstance: {fileID: 1239008639}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &159148037 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4650392504674619769, guid: 460572c39bb283c4db3e151195406f48, type: 3}
   m_PrefabInstance: {fileID: 1239008639}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &159148038
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 159148036}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f152d1d7523390419bec3efa7f6ffa9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 3
-  speed: 7.5
-  bulletSpeed: 7.5
-  bulletLifespan: 2.5
-  ammoCounter: 0
-  maxAmmoSize: 1e+27
-  refillAmmoPercentage: 0.1
-  slowRateOfFire: 0.3
-  fastRateOfFire: 5e-17
-  invincibilityDuration: 2
-  invincible: 0
-  canShoot: 1
-  fireMode: 1
-  bullet: {fileID: 7216829091996747393, guid: 30055c4672b568347a3e5b436f753fb9, type: 3}
 --- !u!1 &165555437
 GameObject:
   m_ObjectHideFlags: 0
@@ -1410,7 +1379,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.3333334, y: 1}
+    m_SensorSize: {x: 2.4455957, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -1464,13 +1433,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad7c4775f94759848a6989328f9fcebe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 8171312755862443357, guid: 460572c39bb283c4db3e151195406f48, type: 3}
+  player: {fileID: 793778950}
   healthText: {fileID: 2114518476}
   ammoText: {fileID: 1362243881}
   enemyCount: {fileID: 1474988389}
-  resumeButton: {fileID: 0}
-  mainMenuButton: {fileID: 0}
-  quitButton: {fileID: 0}
+  resumeButton: {fileID: 1295135094}
+  mainMenuButton: {fileID: 88990899}
+  quitButton: {fileID: 394853958}
   restartButton: {fileID: 0}
   pauseIndicator: {fileID: 0}
   playButton: {fileID: 0}
@@ -110097,6 +110066,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08437e9957d009340a49a50a097be833, type: 3}
+--- !u!114 &793778950 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 421598532, guid: 460572c39bb283c4db3e151195406f48, type: 3}
+  m_PrefabInstance: {fileID: 1239008639}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f152d1d7523390419bec3efa7f6ffa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &805463142
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4503912087620466195}
   - component: {fileID: 421598528}
   - component: {fileID: 421598529}
-  - component: {fileID: 8171312755862443357}
+  - component: {fileID: 421598532}
   m_Layer: 0
   m_Name: Player
   m_TagString: player
@@ -124,7 +124,7 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
---- !u!114 &8171312755862443357
+--- !u!114 &421598532
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -139,12 +139,12 @@ MonoBehaviour:
   health: 100
   speed: 7
   bulletSpeed: 7.5
-  bulletLifespan: 2.5
+  bulletLifespan: 2
   ammoCounter: 0
   maxAmmoSize: 3.4028235e+38
   refillAmmoPercentage: 0.5
   slowRateOfFire: 0.3
-  fastRateOfFire: 5e-31
+  fastRateOfFire: 0
   invincibilityDuration: 2
   invincible: 0
   canShoot: 1
