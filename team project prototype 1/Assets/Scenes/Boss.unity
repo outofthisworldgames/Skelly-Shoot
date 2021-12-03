@@ -1467,6 +1467,7 @@ MonoBehaviour:
   player: {fileID: 8171312755862443357, guid: 460572c39bb283c4db3e151195406f48, type: 3}
   healthText: {fileID: 2114518476}
   ammoText: {fileID: 1362243881}
+  enemyCount: {fileID: 1474988389}
   resumeButton: {fileID: 0}
   mainMenuButton: {fileID: 0}
   quitButton: {fileID: 0}
