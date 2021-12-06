@@ -76,8 +76,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 0, g: 0.4433962, b: 0.04158996, a: 1}
+  m_Sprite: {fileID: 21300000, guid: a3f0ed5ff427dfd409f1f1a3b3e7b45c, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -146,7 +146,14 @@ MonoBehaviour:
   slowRateOfFire: 0.3
   fastRateOfFire: 0
   invincibilityDuration: 2
+  enemy: {fileID: 0}
+  moveOnY: 1
+  startMovePos: 1
+  maxDistance: 5
+  advMode: 0
+  isFollowing: 0
   invincible: 0
   canShoot: 1
   fireMode: 1
   bullet: {fileID: 7216829091996747393, guid: 30055c4672b568347a3e5b436f753fb9, type: 3}
+  Arrow: {fileID: 0}
