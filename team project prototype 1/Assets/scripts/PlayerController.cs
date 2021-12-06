@@ -9,15 +9,28 @@ public class PlayerController : MonoBehaviour
     public float bulletSpeed = 7.5f;
     public float bulletLifespan = 2.5f;
     public float ammoCounter = 0;
-    public float maxAmmoSize = 100000f;
+    public float maxAmmoSize = 3.402823e+38f;
     public float refillAmmoPercentage = .1f;
     private float currentRateOfFire;
     public float slowRateOfFire = .3f;
-    public float fastRateOfFire = .05f;
+    public float fastRateOfFire = 0f;
     private float rofTimer = 0;
     private float invincibilityTimer = 0;
     public float invincibilityDuration = 2;
+    public Transform enemy;
 
+    public bool moveOnY = true;
+    public bool startMovePos = true;
+    public float maxDistance = 5.0f;
+
+    Vector2 zero;
+    Vector2 origin;
+    Vector2 maxPos;
+    Vector2 minPos;
+
+
+    public bool advMode = false;
+    public bool isFollowing = false;
     public bool invincible = false;
     public bool canShoot = true;
     public bool fireMode = false; // True == fastRateOfFire | False == slowRateOfFire
@@ -25,23 +38,29 @@ public class PlayerController : MonoBehaviour
     GameManager gm;
     public GameObject bullet;
     Rigidbody2D myRB;
+    Rigidbody2D emRB;
+    public GameObject Arrow;
 
     // Start is called before the first frame update
     void Start()
     {
         gm = GameObject.Find("GameManager").GetComponent<GameManager>();
         myRB = GetComponent<Rigidbody2D>();
-
+        emRB = GameObject.Find("enemy").GetComponent<Rigidbody2D>();
         
 
         currentRateOfFire = fastRateOfFire;
 
         ammoCounter = maxAmmoSize;
+       
     }
+
 
     // Update is called once per frame
     void Update()
     {
+        
+        
         Vector2 velocity = myRB.velocity;
 
         velocity.x = Input.GetAxisRaw("Horizontal") * speed;
